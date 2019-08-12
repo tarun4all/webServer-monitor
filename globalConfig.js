@@ -1,0 +1,2 @@
+global.DB = {};
+global.expressApp = '';

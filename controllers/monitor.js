@@ -39,6 +39,21 @@ const createMonitor = async (req, res) => {
     }
 }
 
+const fetchMonitors = async (req, res) => {
+    const queryParams = req.query;
+    if(queryParams && queryParams.user) {
+        let data = await DB.monitors.find({userID: queryParams.user});
+
+        if(Array.isArray(data) && data.length > 0) {
+            res.send(data);
+        } else {
+            res.send({msg: "No data"});
+        }
+    } else {
+        res.send("invalid params");
+    }
+}
+
 const deleteCron = async (req, res) => {
     if(req.query && req.query.cronID && cronTasks[req.query.cronID]) {
         cronTasks[cronID].stop();
@@ -134,4 +149,5 @@ const nodeMailerPhone = async (mobileNo) => {
 module.exports = {
     createMonitor,
     deleteCron,
+    fetchMonitors,
 }

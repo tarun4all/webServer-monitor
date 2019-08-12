@@ -1,5 +1,6 @@
 const request = require('request');
 const nodemailer = require("nodemailer");
+const sessions = {};
 
 const login = async (req, res) => {
     console.log(req.session);
@@ -10,13 +11,17 @@ const login = async (req, res) => {
 
     if(req.query && req.query.contact) {
         var userDetails = await DB.users.findOne({$or: [{phoneNo: req.query.contact}, {email: req.query.contact}]});
-
+        console.log(userDetails);
         if(!userDetails || userDetails.length < 1) {
             res.send("No user exist with this name");
         } else {
+            var sess = '';
+            for(let i=0; i< 5; i++) {
+                sess += Math.floor(Math.random() * 11);
+            }
+            sessions[sess] = {id: userDetails._id, otp: '454545'};
             req.session.userID = userDetails._id;
             req.session.otp = '454545';
-            console.log(userDetails);
             if(userDetails.phoneNo) {
                 await nodeMailerPhone(userDetails.phone);
             }
@@ -25,7 +30,7 @@ const login = async (req, res) => {
                 console.log("mail");
                 await nodeMailerEmail(userDetails.email);
             }
-            res.send({msg: "OTP Sent"});
+            res.send({msg: "OTP Sent", otp: sess});
         }
     } else {
         res.send("invalid login");
@@ -33,11 +38,13 @@ const login = async (req, res) => {
 }
 
 const verifyOTP = async (req, res) => {
-    if(req && req.query.otp && req.session && req.session.otp && req.session.userID) {
-        if(req.query.otp == req.session.otp) {
-            var userDetails = await DB.users.findOne({'_id' : req.session.userID});
+    console.log(sessions);
+    if(req && req.query.otp && req.query.session) {
+        if(req.query.otp == sessions[req.query.session].otp) {
+            var userDetails = await DB.users.findOne({'_id' : sessions[req.query.session].id});
             req.session.loginDone = true;
-            res.send({...userDetails, msg: 'loginDone'});
+            console.log(userDetails)
+            res.send({id: userDetails._id, msg: 'loginDone'});
         }
     } else {
         res.send("invalid login");
@@ -75,6 +82,7 @@ const nodeMailerEmail = async (emailID) => {
         };
 
         transporter.sendMail(mailOptions, function(error, info) {
+            console.log("mails shoot");
             if (error) {
                 console.log("mail error", error);
                 resolve(error);

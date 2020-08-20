@@ -1,1 +1,98 @@
-<mxfile host="app.diagrams.net" modified="2020-08-20T07:49:36.678Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="8dcINFw_x_18IhckyaFy" version="13.6.3" type="github"><diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">7ZjLcpswFIafhmU6RhgbL2Pn0kU6yTSdSbOU4QTUCMQIEeM+fSUQYC5OcGrctNOVpV8XxP/pnMPYsFZhds1xHHxhHlADTbzMsC4MhEyELPmjlK1WTAcVis+Jp7VauCc/QYsTrabEg6QxUTBGBYmbosuiCFzR0DDnbNOc9sRo86kx9qEj3LuYdtUH4omgUB17UuufgfhB+WRzokdCXE7WQhJgj212JOvSsFacMVG0wmwFVLlX+lKsu9ozWh2MQySGLLCidHmV8YW7vZnE0e3DN4Svz/QuL5im+oUN6/x2/UNZWZxabEsr5AvEqpmG9IY8ASWR7C1j4CQEAVyOUC3f1dpSghFYamrczPuU4jgh63zbiVQ4uClPyAt8haTgn6ssjTzwdK8yL+8Izp4rHGpT/RbABWR77TEr0+V1BSYPyLdySnVXNSd9Ux3d3dTUK7bBDnGrFLG+aX61dQ1DNjSPA9igLps2kpiRSOTPtZeGfdHCwbgImM8iTHeBHN/Y/Tdrr9tTu2H2vM/srtfmYiyvrY7XHkliLNyg47kyg8gEcU6JH0lpzYRgYe4e5uJc5RzlvdxKahB5pbKmzH0up+lE5wwlAF4nTQ3xXyZLzH14bR7q58SBYiFjsplQe2zXS+/UTaz5npn9gMsdEpZyF/SiFrvqFO/HOf2HQ8du5qkqb70RO85YoWP/LyFZqxR8mBIy+6vjwD6khPSa3VNCZmN5Pe94zUGkPBpeQHaKBYtBDi09nAS5z2YxvFM2ICPiuzZdtR9V+9PCfndFKVLy25dpWEUZFDe/WWTQvHkFkDVrblEcdbQq4xzho6HnA0G6xrcVWtV5PCTSDgeLBoKd/SmwnaAd+fNh0QEr0dE1lniOAtY8EdihETs9Gdhps0KiduUbGWxZEU6dpM2TJenph4vlNnJ7fqQkLbv1vyfF9PpPKOvyFw==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-08-20T07:59:59.978Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="nPL85gX6YcFbGMe6HS7A" version="13.6.3" type="github">
+  <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
+    <mxGraphModel dx="2276" dy="745" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0V44amsKGFusAbvCFJCZ-22" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="10" y="10" width="470" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-8" value="Login request from APP" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" parent="0V44amsKGFusAbvCFJCZ-22" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="140.0000000000001" as="sourcePoint" />
+            <mxPoint x="270" y="140.0000000000001" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0V44amsKGFusAbvCFJCZ-1" value="AUTH0 webpage" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0V44amsKGFusAbvCFJCZ-22">
+          <mxGeometry x="270" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0V44amsKGFusAbvCFJCZ-2" value="AUTH0 Server" style="shape=cylinder2;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="0V44amsKGFusAbvCFJCZ-22">
+          <mxGeometry x="300" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0V44amsKGFusAbvCFJCZ-4" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="0V44amsKGFusAbvCFJCZ-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="324.5" y="130" as="sourcePoint" />
+            <mxPoint x="324.5" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0V44amsKGFusAbvCFJCZ-5" value="Validating" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="0V44amsKGFusAbvCFJCZ-22">
+          <mxGeometry x="340" y="90" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0V44amsKGFusAbvCFJCZ-6" value="User Accessing APP" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="0V44amsKGFusAbvCFJCZ-22">
+          <mxGeometry y="130" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0V44amsKGFusAbvCFJCZ-7" value="" style="endArrow=classic;html=1;" edge="1" parent="0V44amsKGFusAbvCFJCZ-22" source="0V44amsKGFusAbvCFJCZ-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="170" as="sourcePoint" />
+            <mxPoint x="40" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0V44amsKGFusAbvCFJCZ-8" value="Auth0 Token" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="0V44amsKGFusAbvCFJCZ-22">
+          <mxGeometry x="130" y="150" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0V44amsKGFusAbvCFJCZ-9" value="" style="endArrow=classic;html=1;" edge="1" parent="0V44amsKGFusAbvCFJCZ-22" target="0V44amsKGFusAbvCFJCZ-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="170" as="sourcePoint" />
+            <mxPoint x="40" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0V44amsKGFusAbvCFJCZ-10" value="" style="endArrow=classic;html=1;" edge="1" parent="0V44amsKGFusAbvCFJCZ-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="190" as="sourcePoint" />
+            <mxPoint x="220" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0V44amsKGFusAbvCFJCZ-11" value="Yubi Health Server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0V44amsKGFusAbvCFJCZ-22">
+          <mxGeometry x="230" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0V44amsKGFusAbvCFJCZ-12" value="" style="endArrow=classic;html=1;" edge="1" parent="0V44amsKGFusAbvCFJCZ-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="260" as="sourcePoint" />
+            <mxPoint x="360" y="40" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="410" y="220" />
+              <mxPoint x="440" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0V44amsKGFusAbvCFJCZ-13" value="Validating" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="0V44amsKGFusAbvCFJCZ-22">
+          <mxGeometry x="430" y="180" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0V44amsKGFusAbvCFJCZ-14" value="YubiHEALTH DB" style="shape=cylinder2;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="0V44amsKGFusAbvCFJCZ-22">
+          <mxGeometry x="150" y="330" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0V44amsKGFusAbvCFJCZ-15" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="0V44amsKGFusAbvCFJCZ-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="350" as="sourcePoint" />
+            <mxPoint x="270" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0V44amsKGFusAbvCFJCZ-17" value="Storing Token and generating JWT for ref" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="0V44amsKGFusAbvCFJCZ-22">
+          <mxGeometry x="270" y="340" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0V44amsKGFusAbvCFJCZ-19" value="" style="endArrow=classic;html=1;" edge="1" parent="0V44amsKGFusAbvCFJCZ-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="270" as="sourcePoint" />
+            <mxPoint x="50" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0V44amsKGFusAbvCFJCZ-20" value="YubiHEALTH JWT Toekn" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="0V44amsKGFusAbvCFJCZ-22">
+          <mxGeometry x="90" y="250" width="40" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
